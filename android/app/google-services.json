@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "419053752312",
+    "project_id": "service-hub-7bf79",
+    "storage_bucket": "service-hub-7bf79.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419053752312:android:04e695d79c045756c8100d",
+        "android_client_info": {
+          "package_name": "com.example.serviceshub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANaaqixmQJUYv2yKCf7PBCSXe9iQigpOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
