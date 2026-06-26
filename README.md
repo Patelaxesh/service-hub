@@ -1,16 +1,78 @@
-# serviceshub
+# Service Hub
 
-A new Flutter project.
+Service Hub is a Flutter and Firebase based multi-service marketplace application that connects customers with verified service providers. The platform enables users to discover services, book appointments, manage bookings, and communicate with providers through a modern and user-friendly mobile application.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+### Customer Module
 
-A few resources to get you started if this is your first Flutter project:
+* User Registration and Login
+* Google Sign-In
+* Service Search and Discovery
+* Service Details View
+* Add to Cart
+* Service Booking
+* Order History
+* Profile Management
+* Feedback and Ratings
+* Notifications
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Service Provider Module
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Provider Registration and Login
+* Service Management
+* Booking Request Management
+* Earnings and Payments
+* Customer Reviews and Ratings
+* Notifications
+* Profile Management
+
+### Admin Module
+
+* Dashboard Analytics
+* Customer Management
+* Provider Management
+* Service Approval
+* Category Management
+* Reports and Analytics
+
+## Technology Stack
+
+* Flutter
+* Dart
+* Firebase Authentication
+* Cloud Firestore
+* Firebase Storage
+* Firebase Cloud Messaging (FCM)
+* Provider State Management
+
+## Project Structure
+
+```text
+lib/
+├── features/
+│   ├── admin/
+│   ├── customer/
+│   ├── provider/
+│   └── splash/
+├── core/
+└── main.dart
+```
+
+## Screenshots
+
+Add application screenshots here.
+
+## Future Enhancements
+
+* Real-time Chat
+* Online Payments
+* Service Tracking
+* Provider Verification System
+* Multi-language Support
+
+## Author
+
+Axesh Patel
+
+Flutter Developer
