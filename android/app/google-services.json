@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "419053752312",
+    "firebase_url": "https://service-hub-7bf79-default-rtdb.firebaseio.com",
     "project_id": "service-hub-7bf79",
     "storage_bucket": "service-hub-7bf79.firebasestorage.app"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.serviceshub"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "419053752312-9c3lfopbm1hh0i0gnqvf5h23cifi3m8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.serviceshub",
+            "certificate_hash": "7d488056e54d09cfc27e4cd683eea7b143c31463"
+          }
+        },
+        {
+          "client_id": "419053752312-p581vfsusverp789bo3tj884s2u0pcs1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyANaaqixmQJUYv2yKCf7PBCSXe9iQigpOs"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419053752312-p581vfsusverp789bo3tj884s2u0pcs1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
