@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:serviceshub/features/admin/screens/admin_screen.dart';
-import 'package:serviceshub/features/admin/screens/supplier_screen.dart';
-import '../../admin/screens/customer_screen.dart';
+import 'package:serviceshub/features/admin/screens/admin_login_screen.dart';
+import 'package:serviceshub/features/supplier/screens/supplier_login_screen.dart';
+
+import '../../customer/screens/customer_screen.dart';
 
 class NextScreen extends StatelessWidget {
   const NextScreen({super.key});
@@ -46,7 +47,7 @@ class NextScreen extends StatelessWidget {
               role: "Admin",
               color: Colors.lightBlue, // Softer blue
               icon: Icons.admin_panel_settings,
-              screen: const AdminScreen(),
+              screen: const AdminLoginScreen(),
             ),
             const SizedBox(height: buttonMargin),
             _buildRoleButton(
@@ -62,7 +63,7 @@ class NextScreen extends StatelessWidget {
               role: "Supplier",
               color: Colors.redAccent, // Softer orange instead of red
               icon: Icons.miscellaneous_services,
-              screen: const SupplierScreen(),
+              screen: const SupplierLoginScreen(),
             ),
           ],
         ),
@@ -100,11 +101,11 @@ class NextScreen extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(buttonPadding),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.9), // Solid color instead of gradient
+          color: color.withValues(alpha: 0.9), // Solid color instead of gradient
           borderRadius: BorderRadius.circular(buttonBorderRadius),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1), // Lighter shadow
+              color: Colors.black.withValues(alpha: 0.1), // Lighter shadow
               offset: const Offset(1, 1),
               blurRadius: 6,
             ),

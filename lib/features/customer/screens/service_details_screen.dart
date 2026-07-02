@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:serviceshub/features/customer/screens/cart_screen.dart';
-import 'package:serviceshub/features/customer/screens/payment_screen.dart';
+import 'package:serviceshub/features/customer/screens/customer_cart_screen.dart';
+import 'package:serviceshub/features/customer/screens/customer_payment_screen.dart';
 
 
-class ServiceDetailsScreen extends StatelessWidget {
+class CustomerServiceDetailsScreen extends StatelessWidget {
   final String serviceName;
   final String serviceDescription;
   final double price;
@@ -12,7 +12,7 @@ class ServiceDetailsScreen extends StatelessWidget {
   final String supplierPhone;
 
   // Constructor to accept data for the service
-  const ServiceDetailsScreen({
+  const CustomerServiceDetailsScreen({
     super.key,
     required this.serviceName,
     required this.serviceDescription,
@@ -90,7 +90,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                     //const Icon(Icons.currency_rupee, color: Colors.green),
                     const SizedBox(width: 8.0),
                     Text(
-                      "Price: \₹${price.toStringAsFixed(2)}",
+                      "Price: ₹${price.toStringAsFixed(2)}",
                       style: const TextStyle(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
@@ -150,7 +150,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => CartScreen(
+                      builder: (context) => CustomerCartScreen(
                         initialCartItems: [newItem],
                       ),
                     ),
@@ -185,7 +185,7 @@ class ServiceDetailsScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => PaymentScreen(
+                      builder: (context) => CustomerPaymentScreen(
                         serviceName: serviceName,
                         totalAmount:
                             price, // Pass the service price as total amount
